@@ -1,0 +1,141 @@
+html{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+       
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color:#808080;
+    font-weight: 200;
+    
+}
+body{
+    padding: 20px;
+}
+
+nav{
+    padding: 20px;
+border: 1px solid gray;
+border-radius: 10px;
+
+}
+nav > h3{
+    color: white;
+}
+
+.container
+{
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.card-container{
+    width: 25%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+.profile-image{
+    width: 40%;
+    border-radius:50%;
+}
+
+.card{
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.card li{
+    padding: 10px;
+    margin-left: 5px;
+}
+
+
+.item
+{
+    padding: 10px;
+    border: 1px solid gray;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 10px;
+}
+.item > h1{
+    color: white;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.bottom-card > div{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px ;
+    padding: 5px;
+}
+.bottom-card img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+table{
+    border: 1px solid gray;
+    margin-top: 20px;
+    width: 100%;
+    flex-grow: 1;
+    border-radius: 10px;
+
+}
+
+table td:nth-child(3){
+    border-right: none;
+}
+ 
+thead{
+    border: 1px solid gray;
+}
+thead td{
+    border-bottom: 1px solid gray;
+}
+
+td{
+    /*border: 1px solid gray;*/
+    padding: 10px;
+    border-right: 1px solid gray;
+}
+
+input{
+    display: none;
+}
+label{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+input:checked + label{
+    background-color: rgb(126, 116, 116);
+}
+
+@media(max-width:700px)
+{
+    .container{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+}
+
+
